@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace=绑定对应的Dao/Mapper接口-->
+<mapper namespace="com.bluebridge.dao.MajorDao">
+    <!--查询所有专业-->
+    <select id="selectMajors" resultType="Major">
+        select mid,mname,mdept,mremark from major
+    </select>
+</mapper>
